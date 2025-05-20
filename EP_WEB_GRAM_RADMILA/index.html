@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add List Item</title>
+  </head>
+  <body>
+    <h2>My List</h2>
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button id="addButton">Add New Item</button>
+
+    <script>
+      function addListItem() {
+        const ul = document.getElementById("myList");
+        const li = document.createElement("li");
+        li.textContent = "New Item";
+        ul.appendChild(li);
+      }
+
+      document
+        .getElementById("addButton")
+        .addEventListener("click", addListItem);
+    </script>
+  </body>
+</html>
